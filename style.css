@@ -1,0 +1,53 @@
+.keyboard {
+  width: 1000px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.keyboard-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.keyboard-key {
+  width: 100%;
+  height: 50px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  cursor: pointer;
+  user-select: none;
+  box-sizing: border-box;
+  padding: 0 10px;
+}
+
+.keyboard-key:not(:contains('Backspace')) {
+  width: 100px;
+}
+
+.keyboard-key:contains('Backspace') {
+  //width: 180px;
+}
+
+
+.textarea {
+  width: 1000px;
+  height: 200px;
+  margin: 20px auto;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16px;
+  resize: none;
+}
