@@ -32,7 +32,7 @@
 }
 
 .keyboard-key:not(:contains('Backspace')) {
-  width: 100px;
+  //width: 100px;
 }
 
 .keyboard-key:contains('Backspace') {
