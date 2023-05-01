@@ -1,0 +1,88 @@
+body {
+  background-color: #888888;
+}
+
+.keyboard {
+  width: 1100px;
+  margin: 0 auto;
+  padding: 10px;
+  box-shadow: 0px 10px 40px 10px #ffffff;
+  background: #888888;
+  border-radius: 10px;
+}
+.keyboardTextTitle {
+  font-size: 45px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+.keyboardTextDescription,
+.keyboardTextLanguage {
+  font-size: 30px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  margin: 0;
+}
+.keyboardTextDescription {
+  margin-top: 20px;
+}
+.keyboard .row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.keyboard .key {
+  border-radius: 7px;
+  box-shadow: 0px 10px 5px 2px #333;
+  cursor: pointer;
+  height: 60px;
+  min-width: 60px;
+  margin-right: 5px;
+  font-size: 25px;
+  text-align: center;
+  line-height: 1;
+  padding: 0;
+  vertical-align: middle;
+  margin-bottom: 7px;
+  position: relative;
+  transition: all 0.1s;
+}
+.keyboard .key:hover,
+.keyboard .key.active {
+  background-color: #02f702;
+}
+button[data-key="backspace"] {
+  width: 160px;
+}
+button[data-key="tab"] {
+  width: 80px;
+}
+button[data-key="del"],
+button[data-key="ctrl"] {
+  width: 70px;
+}
+button[data-key="capslock"],
+button[data-key="shift "] {
+  width: 150px;
+}
+button[data-key="enter"],
+button[data-key="shift"] {
+  width: 140px;
+}
+button[data-key=" "] {
+  width: 500px;
+}
+.textarea {
+  width: 1000px;
+  height: 200px;
+  margin: 20px auto;
+  display: block;
+  box-shadow: 0px -5px 40px 10px #333;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 24px;
+}
