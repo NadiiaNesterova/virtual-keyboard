@@ -50,17 +50,11 @@ body {
   margin-bottom: 7px;
   position: relative;
   transition: all 0.1s;
-  text-transform: capitalize;
 }
 .keyboard .key:hover,
-.keyboard .key:active,
 .keyboard .key.active {
   background-color: #02f702;
 }
-.keyboard .key:not(:contains('Backspace')) {
-  //width: 100px;
-}
-
 button[data-key="backspace"] {
   width: 160px;
 }
@@ -72,6 +66,9 @@ button[data-key="ctrl"] {
   width: 70px;
 }
 button[data-key="capslock"],
+button[data-key="shift "] {
+  width: 150px;
+}
 button[data-key="enter"],
 button[data-key="shift"] {
   width: 140px;
@@ -79,7 +76,6 @@ button[data-key="shift"] {
 button[data-key=" "] {
   width: 500px;
 }
-
 .textarea {
   width: 1000px;
   height: 200px;
